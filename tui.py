@@ -42,7 +42,7 @@ def print_pr(pr):
         # Only do this if there is a Payment URL
         if pr.details.payment_url:
             # Get raw tx and refund address for Payment message
-            raw_tx = input("Enter the hex of the transaction that was just made: ").strip()
+            raw_tx = input("Enter the txid of the transaction that was just made: ").strip()
             ref_addr = input("Enter a refund address: ").strip()
 
             # Send payment message and wait for ACK

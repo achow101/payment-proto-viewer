@@ -140,7 +140,7 @@ class App(QWidget):
                 sys.exit()
             elif response == QMessageBox.Yes:
                 if pr.details.payment_url:
-                    raw_tx, okPressed1 = QInputDialog.getText(self, "Enter Raw Transaction","Enter the hex of the transaction that was just made:", QLineEdit.Normal, "")
+                    raw_tx, okPressed1 = QInputDialog.getText(self, "Enter Raw Transaction","Enter the txid of the transaction that was just made:", QLineEdit.Normal, "")
                     if okPressed1 and raw_tx != '':
                         ref_addr, okPressed2 = QInputDialog.getText(self, "Enter Refund Address","Enter a refund address:", QLineEdit.Normal, "")
                         if okPressed2 and ref_addr != '':
